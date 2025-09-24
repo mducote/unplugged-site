@@ -86,13 +86,63 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/* General Styles */
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  text-align: left;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.875em;
+}
+
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125em;
+  margin: 20px 0;
+}
+
+p {
+  font-size: 0.875em;
+  line-height: 1.285;
+}
+/*
+img {
+}
+
+figure {
+}
+*/
+address {
+  font-style: normal;
+}
+
 .content-wrapper {
   outline: 3px dotted red;
   width: 90%;
   margin: 50px 0;
 }
 
-/*----------Base Header - Footer Styles----------*/
+/*----------Base Header Styles----------*/
 header {
   display: flex;
   justify-content: center;
@@ -120,10 +170,10 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-around;
-  list-style: none;
   width: 100%;
 }
 
+/*----------Base Footer Styles----------*/
 footer {
   display: flex;
   flex-direction: column;
@@ -160,6 +210,7 @@ footer .copyright {
 }
 
 /*----------Mobile Styles - Homepage----------*/
+
 /* Hero Area */
 .hero-area {
   display: flex;
@@ -182,16 +233,16 @@ aside {
   margin-bottom: 60px;
 }
 
+.features article {
+  width: 63%;
+  margin: 30px 0;
+}
+
 .features .features-items {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
-}
-
-.features article {
-  width: 63%;
-  margin: 30px 0;
 }
 
 .features p {
@@ -204,8 +255,13 @@ aside {
   justify-content: center;
 }
 
+.reviews h2 {
+  margin-bottom: 40px;
+}
+
 .reviews h3 {
   width: 55%;
+  margin: 20px 0;
 }
 
 /*----------Mobile Styles - About Page----------*/
@@ -336,6 +392,7 @@ aside {
 @media only screen and (min-width: 768px) {
   /* table styles here */
 
+  /* General Styles */
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
@@ -347,7 +404,6 @@ aside {
   }
 
   header .content-wrapper {
-    /* undo flex flow: row wrap from mobile designs */
     width: 100%;
     justify-content: space-between;
   }
@@ -361,7 +417,6 @@ aside {
   }
 
   .header-divider {
-    /* get rid of divider */
     display: none;
   }
 
@@ -390,7 +445,7 @@ aside {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
   }
 
   /* Reviews */
