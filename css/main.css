@@ -233,6 +233,8 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
+  background: url('.../img/unplugged-retreat.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .hero-area h1 {
