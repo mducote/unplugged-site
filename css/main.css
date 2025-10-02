@@ -499,7 +499,11 @@ input[type=button] {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
+@media only screen and (max-width: 320px) {
+  .hero-area h1 {
+    margin: 0;
+  }
+}
 @media only screen and (min-width: 768px) {
   /* table styles here */
 
