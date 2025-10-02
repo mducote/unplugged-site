@@ -350,10 +350,18 @@ input[type=button] {
   background: #527158;
 }
 
+.mission h2 {
+  margin: 0;
+}
+
 .contact-section {
   display: flex;
   justify-content: center;
   background: #2a423a;
+}
+
+.contact-section h2 {
+  margin-top: 0;
 }
 
 .map figure {
